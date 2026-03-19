@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1 id="resetTasks" style="cursor:pointer;">📝 Lista de Tarefas</h1>
+
+            <input type="text" id="searchTask" placeholder="Buscar tarefa...">
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+
+            <h2>Adicionar Nova Tarefa</h2>
+
+            <form id="taskForm">
+
+                <input type="text" id="title" placeholder="Título da tarefa" required>
+
+                <textarea id="description" placeholder="Descrição da tarefa" required></textarea>
+
+                <input type="date" id="date" required>
+
+                <select id="priority" required>
+                    <option value="">Escolha a prioridade</option>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Média">Média</option>
+                    <option value="Alta">Alta</option>
+                </select>
+
+                <button type="submit">Adicionar Tarefa</button>
+
+            </form>
+
+        </section>
+
+        <section class="tasks-section">
+
+            <h2>Minhas Tarefas</h2>
+
+            <div id="taskList"></div>
+
+            <p id="emptyMessage">Nenhuma tarefa cadastrada.</p>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <p>© 2026 - Desenvolvido por Rebeca</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
